@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/* =======================================================================
+    Typography
+========================================================================== */
+
+@font-face {
+    font-family: 'Lato';
+    font-weight: 700;
+    src: url('#{$fonts-dir}/Lato-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-weight: 400;
+    src: url('#{$fonts-dir}/Lato-Light.ttf') format('truetype');
+}
+
+// GENERAL FONT STYLING
+h1, h2, h3, h4, h5, h6, th, td, p, a, label, input, select, span, li, pre {
+    font-family: $main-font;
+    color: $color-gunmetal-gray;
+    font-weight: normal;
+    font-size: $font-size-s;
+}
+
+// GENERAL FONT SIZING
+h1 {
+    font-size: $font-size-l;
+}
+h2, {
+    font-size: $font-size-m;
+}
+h3, {
+    font-size: $font-size-m;
+}
+h4, {
+    font-size: $font-size-m;
+}
+h5, {
+    font-size: $font-size-m;
+}
+h6, {
+    font-size: $font-size-m;
+}
+p {
+    font-size: $font-size-s;
+    line-height: 33px;
+}

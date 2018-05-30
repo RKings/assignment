@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+/* =======================================================================
+    Constants - Path variables
+========================================================================== */
+
+// PATH SETTINGS
+$icons-path :           "../assets/icons";
+$fonts-dir :            "../assets/fonts";
+$images-dir :           "../assets/images";
+
+
+/* =======================================================================
+    Constants - colors
+========================================================================== */
+
+// MAIN BRAND COLORS
+$color-salmon:          #ff7676;
+$color-green:           #7bdb4c;
+
+$color-bluish-gray:     #789199;
+$color-gunmetal-gray:   #555d60;
+$color-warm-gray:       #8e8e8e;
+
+$color-white:           #ffffff;
+$color-black:           #000000;
+
+
+/* =======================================================================
+    Constants - typography
+========================================================================== */
+
+$main-font:             'Lato', Helvetica, Arial !default;
+
+$font-size-s:          16px !default;
+$font-size-m:          24px !default;
+$font-size-l:          33px !default;
+$font-size-xl:         40px !default;
+
+
+/* =======================================================================
+    Constants - Media queries break points
+========================================================================== */
+
+$break-s:              576px;
+$break-m:              768px;
+$break-l:              992px;
+$break-xl:             1240px;
+
+$container-s:          620px;
+$container-m:          940px;
+
+
+/* =======================================================================
+    Constants - Element variables
+========================================================================== */
+
+// GUTTER
+$gutter: 20px;
+$gutter-half: 10px;
+
+// RADIUS
+$radius: 10px;
+
+// VERTICAL
+$v-gutter-small : 10px;
+
+// TRANSITION
+$default-transition: cubic-bezier(0.20, 0, 0, 1);

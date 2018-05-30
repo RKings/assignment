@@ -1,0 +1,106 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+.header__wrapper {
+    background-color: $color-black;
+    width: 100%;
+    padding: 19px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    border-bottom: 2px solid $color-white;
+
+    @include breakpoint(small) {
+        padding: 24px 30px;
+        justify-content: left;
+    }
+}
+
+.header__navigation {
+    position: absolute;
+    width: 100%;
+    padding: 100px 30px 0;
+    height: 100vh;
+    top: 0;
+    background-color: $color-black;
+    left: 0;
+    z-index: -1;
+    transform: translateY(-100vh);
+    display: none;
+    overflow-y: auto;
+    transition: transform .3s $default-transition;
+
+    @include breakpoint(small) {
+        position: relative;
+        width: auto;
+        padding: 0;
+        height: auto;
+        background-color: transparent;
+        transform: none;
+        display: block;
+        z-index: 0;
+        overflow-y: visible;
+    }
+
+    &--visible {
+        display: block;
+    }
+
+    &--show {
+        transform: translateY(0vh);
+
+        @include breakpoint(small) {
+            transform: none;
+        }
+    }
+}
+
+.header__link {
+    font-family: $main-font;
+    font-weight: 700;
+    text-decoration: none;
+    color: $color-white;
+    font-size: $font-size-l;
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+
+    @include breakpoint(small) {
+        margin-right: 30px;
+        color: $color-warm-gray;
+        font-size: $font-size-s;
+        margin-bottom: 0;
+        display: inline-block;
+        text-align: left;
+
+        &.router-link-exact-active {
+            color: $color-white;
+        }
+    }
+
+    &:hover {
+        color: $color-salmon;
+    }
+}
+
+.header__logo {
+    width: calc(100% - 48px); // minus hamburger * 2
+    height: 22px;
+    background: url('../assets/images/logo-stripe.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 24px;
+
+    @include breakpoint(small) {
+        width: 32px;
+        height: 32px;
+        margin-right: 30px;
+    }
+}

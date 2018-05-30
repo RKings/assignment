@@ -1,0 +1,20 @@
+@mixin breakpoint($size) {
+    @if($size == small) {
+        @media (min-width: $break-s){
+            @content
+        }
+    }
+    @else if($size == medium) {
+        @media (min-width: $break-m){
+            @content
+        }
+    }
+    @else if($size == large) {
+        @media (min-width: $break-l){
+            @content
+        }
+    }
+    @else {
+        @error "Value of $size is not supported";
+    }
+}

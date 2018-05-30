@@ -1,0 +1,11 @@
+@mixin block-width($type: big) {
+    @if $type == large {
+        max-width: $container-m;
+    }
+    @else if $type == small {
+        max-width: $container-s;
+    }
+    @else {
+        @error "Value of $type is not supported";
+    }
+}

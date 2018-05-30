@@ -1,0 +1,35 @@
+.hamburger {
+
+    @include breakpoint(small) {
+        display: none;
+    }
+
+    &--open {
+        .hamburger__top-bar,
+        .hamburger__bottom-bar {
+            opacity: 0;
+        }
+        .hamburger__middle-bar {
+            transform: rotate(-45deg);
+        }
+        .hamburger__middle-bar-2 {
+            transform: rotate(45deg);
+        }
+    }
+}
+
+.hamburger__middle-bar {
+    transition: transform .3s $default-transition .1s;
+    transform-origin: center center;
+}
+
+.hamburger__middle-bar-2 {
+    transition: transform .3s $default-transition;
+    transform-origin: center center;
+}
+
+.hamburger__top-bar,
+.hamburger__bottom-bar {
+    opacity: 1;
+    transition: opacity .3s $default-transition;
+}
