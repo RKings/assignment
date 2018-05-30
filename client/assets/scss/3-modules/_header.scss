@@ -19,6 +19,7 @@
     @include breakpoint(small) {
         padding: 24px 30px;
         justify-content: left;
+        border-bottom: 0;
     }
 }
 

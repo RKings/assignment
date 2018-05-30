@@ -1,9 +1,21 @@
 @mixin block-width($type: big) {
     @if $type == large {
         max-width: $container-m;
+        margin: 0 auto;
+        padding: 0 $gutter-half;
+
+        @include breakpoint(large) {
+            padding: 0 $gutter;
+        }
     }
     @else if $type == small {
         max-width: $container-s;
+        margin: 0 auto;
+        padding: 0 $gutter-half;
+
+        @include breakpoint(large) {
+            padding: 0 $gutter;
+        }
     }
     @else {
         @error "Value of $type is not supported";

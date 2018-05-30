@@ -19,7 +19,7 @@
 // GENERAL FONT STYLING
 h1, h2, h3, h4, h5, h6, th, td, p, a, label, input, select, span, li, pre {
     font-family: $main-font;
-    color: $color-gunmetal-gray;
+    color: $color-black;
     font-weight: normal;
     font-size: $font-size-s;
 }
@@ -45,5 +45,4 @@ h6, {
 }
 p {
     font-size: $font-size-s;
-    line-height: 33px;
 }

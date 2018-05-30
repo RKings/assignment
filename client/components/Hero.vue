@@ -5,17 +5,13 @@
                 <picture>
                     <img class="hero__image" src="../assets/images/walibi-xlarge.jpg" alt="walibi">
                 </picture>            
-                <div class="hero__title-wrapper">
-                    <h2 class="hero__title">Walibi</h2>
-                </div>
+                <h2 class="hero__title">Walibi</h2>
             </div>
             <div class="hero__slide swiper-slide">
                 <picture>
                     <img class="hero__image" src="../assets/images/beng-xlarge.jpg" alt="beeld en geluid">
                 </picture>
-                <div class="hero__title-wrapper">
-                    <h2 class="hero__title">Beeld en Geluid</h2>
-                </div>
+                <h2 class="hero__title">Beeld en Geluid</h2>
             </div>
         </div>
         <div class="hero__nav">
@@ -50,7 +46,6 @@ export default {
         ...mapState('breakpoints', ['breakpoints'])
     },
     mounted() {
-        console.log(this);
         const swiperContainer = this.$el;
 
         var mySwiper = new Swiper (swiperContainer, {

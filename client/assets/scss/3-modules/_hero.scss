@@ -20,16 +20,11 @@
     transform: translate(-50%,-50%);
 }
 
-.hero__title-wrapper {
+.hero__title {
     @include block-width(large);
     position: absolute;
     bottom: 50%;
-    left: 50%;
-}
-
-.hero__title {
-    position: relative;
-    left: -50%;
+    right: 50%;
     font-family: $main-font;
     font-size: $font-size-m;
     font-weight: 700;
@@ -37,6 +32,7 @@
     margin-bottom: 30px;
     text-transform: uppercase;
     text-align: center;
+    transform: translateX(50%);
 
     @include breakpoint(large) {
         font-size: $font-size-l;

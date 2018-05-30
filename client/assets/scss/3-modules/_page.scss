@@ -1,8 +1,7 @@
 .page {
     padding-top: 65px;
-    padding-bottom: 50000vh;
 
     @include breakpoint(small) {
-        padding-top: 82px;
+        padding-top: 80px;
     }
 }

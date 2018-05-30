@@ -1,0 +1,102 @@
+.instafeed {
+    padding: 60px 0;
+    background: url('../assets/images/snow-xlarge.jpg');
+    background-size: cover;
+    background-position: center;
+
+    @include breakpoint(small) {
+        padding: 80px 0;
+    }
+
+    @include breakpoint(large) {
+        padding: 100px 0;
+    }
+}
+
+.instafeed__intro {
+    @include block-width(large);
+    text-align: center;
+    margin-bottom: 30px;
+
+    @include breakpoint(small) {
+        margin-bottom: 40px;
+    }
+
+    @include breakpoint(large) {
+        margin-bottom: 50px;
+    }
+}
+
+.instafeed__title {
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: $font-size-l;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: $color-bluish-gray;
+}
+
+.instafeed__account {
+    font-family: $main-font;
+    font-size: $font-size-m;
+    color: $color-white;
+    text-decoration: none;
+}
+
+.instafeed__grid {
+    @include block-width(large);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.instafeed__item {
+    position: relative;
+    width: 100%;
+    margin-bottom: $gutter-half;
+
+    @include breakpoint(small) {
+        width: calc(50% - #{$gutter / 2});
+        margin-right: $gutter;
+        margin-bottom: $gutter;
+        
+        &:nth-of-type(2n+2) {
+            margin-right: 0;
+        }
+    }
+
+    @include breakpoint(large) {
+        width: calc(33.33% - #{$gutter * 4 / 4});
+        
+        &:nth-of-type(2n+2) {
+            margin-right: $gutter;
+        }
+
+        &:nth-of-type(3n+3) {
+            margin-right: 0;
+        }
+    }
+
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+
+.instafeed__caption {
+    background-color: $color-white;
+    padding: 15px;
+
+    p {
+        font-family: $main-font;
+        font-size: $font-size-s;
+        color: $color-gunmetal-gray;
+    }
+}
+
+.instafeed__hittarget {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
