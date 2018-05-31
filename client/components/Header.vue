@@ -33,15 +33,15 @@ export default {
     methods: {
         menuToggle() {
             let now = Date.now();
-            console.log(this.menuOpen);
-            if((now - this.lastToggle) > 320) {
+
+            if((now - this.lastToggle) > 350) {
                 this.lastToggle = now;
 
                 let panel = this.$el.querySelector('.header__navigation');
                 let hideThreshold = (this.menuOpen)? 350 : 0;
 
                 setTimeout(() => panel.classList.toggle('header__navigation--visible'), hideThreshold);
-                setTimeout(() => panel.classList.toggle('header__navigation--show'), 30);
+                setTimeout(() => panel.classList.toggle('header__navigation--show'), 50);
                 this.menuOpen = !this.menuOpen;
             }
         }
