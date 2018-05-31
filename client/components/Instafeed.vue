@@ -25,6 +25,7 @@
     import Axios from 'Axios'
 
     export default {
+        name: 'dept-instafeed',
         data() {
             return {
                 api: {
