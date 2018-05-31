@@ -3,7 +3,8 @@ import Vuex from 'vuex'
 
 //Modules
 
-import Breakpoints from './breakpoints'
+import breakpoints from './breakpoints'
+import instagram from './instagram'
 
 Vue.use(Vuex)
 
@@ -20,7 +21,8 @@ const actions = {
 }
 
 const modules = {
-    Breakpoints
+    breakpoints,
+    instagram
 }
 
 const store = new Vuex.Store({

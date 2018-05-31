@@ -97,3 +97,18 @@
     bottom: 0;
     right: 0;
 }
+
+.instafeed__spinner {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url('../assets/icons/loop.svg');
+    background-size: contain;
+    margin: 0 auto;
+    animation: spinnerLoop 1.3s $default-transition infinite;
+}
+
+@keyframes spinnerLoop {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
