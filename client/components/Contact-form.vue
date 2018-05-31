@@ -68,6 +68,24 @@
                 formSend: false
             }
         },
+        methods: {
+            submit() {
+                this.submitted = true;
+
+                if(this.$v.$invalid == false) {
+                    // Normally add a request
+                    this.feedback('success');
+                }
+            },
+            feedback(data) {
+                if(data == 'success') {
+                    this.formSend = true;
+                    this.noticeMessage = this.successMessage;
+                } else {
+                    this.noticeMessage = this.errorMessage;
+                }
+            }
+        },
         validations: {
             firstName: {
                 required,
@@ -86,24 +104,6 @@
             },
             message: {
                 required
-            }
-        },
-        methods: {
-            submit() {
-                this.submitted = true;
-
-                if(this.$v.$invalid == false) {
-                    // Normally add a request
-                    this.feedback('success');
-                }
-            },
-            feedback(data) {
-                if(data == 'success') {
-                    this.formSend = true;
-                    this.noticeMessage = this.successMessage;
-                } else {
-                    this.noticeMessage = this.errorMessage;
-                }
             }
         }
     }
