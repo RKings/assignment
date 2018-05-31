@@ -6,3 +6,9 @@
         </p>
     </div>
 </template>
+
+<script>
+    export default {
+        name: 'dept-welcome'
+    }
+</script>

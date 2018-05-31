@@ -1,0 +1,26 @@
+.footer{
+    background-color: $color-black;
+    text-align: center;
+    padding: #{$gutter * 2};
+}
+
+.footer__icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-position: center;
+    margin: 0 $gutter;
+
+    &--facebook {
+        background-image: url('../assets/icons/facebook.svg');
+    }
+
+    &--twitter {
+        background-image: url('../assets/icons/twitter.svg');
+    }
+
+    &--instagram {
+        background-image: url('../assets/icons/instagram.svg');
+    }
+}

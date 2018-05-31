@@ -20,6 +20,7 @@
 
 <script>
 export default {
-    props: ['menuOpen'],
+    name: 'dept-hamburger',
+    props: ['menuOpen']
 }
 </script>

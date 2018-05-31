@@ -32,6 +32,7 @@ import scrollTo from 'scroll-to-element';
 import { mapState } from "vuex";
 
 export default {
+    name: 'dept-hero',
     methods: {
         jumpToBottom() {
             const elementPosition = this.$el.getBoundingClientRect();

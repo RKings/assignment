@@ -4,6 +4,7 @@ import store from 'store'
 
 // Views
 import Home from '../views/Home'
+import Contact from '../views/Contact'
 
 Vue.use(Router)
 
@@ -17,6 +18,13 @@ const routes = [
         path: '/home',
         components: {
             default: Home
+        }
+    },
+    {
+        name: 'contact',
+        path: '/contact',
+        components: {
+            default: Contact
         }
     },
 ]

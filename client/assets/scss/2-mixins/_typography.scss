@@ -1,0 +1,17 @@
+@mixin typography($type){
+    @if $type == shout {
+        text-transform: uppercase;
+        font-family: $main-font;
+        font-size: $font-size-m;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: $gutter;
+
+        @include breakpoint(small) {
+            font-size: $font-size-xl;
+        }
+    }
+    @else if {
+        @error "Value of $type is not supported";
+    }
+}

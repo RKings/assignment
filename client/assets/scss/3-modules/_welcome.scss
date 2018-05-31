@@ -4,20 +4,19 @@
 
     h1 {
         @include block-width(large);
-        text-transform: uppercase;
-        font-family: $main-font;
-        font-size: $font-size-xl;
-        font-weight: 700;
-        text-align: center;
-        margin-bottom: $gutter;
+        @include typography(shout);
     }
 
     p {
         @include block-width(large);
         font-family: $main-font;
-        font-size: $font-size-m;
-        line-height: $line-height-m;
+        font-size: $font-size-s;
+        line-height: $line-height;
         text-align: center;
+
+        @include breakpoint(medium) {
+            font-size: $font-size-m;
+        }
     }
 
     @include breakpoint(small) {

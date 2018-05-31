@@ -20,6 +20,7 @@
 import deptHamburger from './hamburger.vue'
 
 export default {
+    name: 'dept-header',
     components: {
         deptHamburger
     },

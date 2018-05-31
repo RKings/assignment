@@ -1,14 +1,13 @@
 .hero {
-    
-}
-
-.hero__slide {
     height: calc(100vh - 62px);
-    overflow: hidden;
-    
+
     @include breakpoint(small) {
         height: calc(100vh - 82px);
     }
+}
+
+.hero__slide {
+    overflow: hidden;
 }
 
 .hero__image {
