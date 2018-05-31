@@ -76,6 +76,10 @@
                     // Normally add a request
                     this.feedback('success');
                 }
+                this.toTop();
+            },
+            toTop(){
+                scrollTo(window.scrollY, window.scrollX + this.$el.getBoundingClientRect().top);
             },
             feedback(data) {
                 if(data == 'success') {

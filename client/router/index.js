@@ -35,7 +35,7 @@ const router = new Router({
 })
 
 router.beforeEach((to, from, next) => {
-
+    window.scrollTo(0,0);
     next()
 })
 

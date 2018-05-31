@@ -35,7 +35,8 @@
     transform: translateY(-100vh);
     display: none;
     overflow-y: auto;
-    transition: transform .3s $default-transition;
+    transition: transform .3s ease-in-out;
+    will-change: transition;
 
     @include breakpoint(small) {
         position: relative;

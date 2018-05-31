@@ -124,7 +124,7 @@
         font-size: $font-size-s;
         font-weight: 700;
         color: $color-white;
-        line-height: 40px;
+        line-height: 1em;
     }
 }
 
@@ -156,6 +156,7 @@
 
 .contact-form__notice-icon{
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     align-items: center;
     height: 30px;
@@ -164,11 +165,13 @@
     font-family: $main-font;
     margin-right: $gutter;
     border-radius: 100%;
+    line-height: 0;
 
     &:before {
         content: '!';
         font-weight: 700;
         color: $color-white;
+        display: block;
     }
 
     &--check {
